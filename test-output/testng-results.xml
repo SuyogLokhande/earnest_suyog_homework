@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="179521" started-at="2016-07-31T16:55:33Z" finished-at="2016-07-31T16:58:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="179521" started-at="2016-07-31T16:55:33Z" finished-at="2016-07-31T16:58:32Z">
+      <class name="com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="beforeTest" is-config="true" duration-ms="18278" started-at="2016-07-31T09:55:33Z" finished-at="2016-07-31T09:55:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="specialTaxRateForCATest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="specialTaxRateForCATest" duration-ms="14624" started-at="2016-07-31T09:55:51Z" data-provider="positiveSocksQtyForSpecialCA" finished-at="2016-07-31T09:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[$199.00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$15.92]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$214.92]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- specialTaxRateForCATest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="teardown" is-config="true" duration-ms="32" started-at="2016-07-31T09:56:06Z" finished-at="2016-07-31T09:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="beforeTest" is-config="true" duration-ms="15873" started-at="2016-07-31T09:56:06Z" finished-at="2016-07-31T09:56:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="specialTaxRateForNYTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="specialTaxRateForNYTest" duration-ms="14847" started-at="2016-07-31T09:56:22Z" data-provider="sixPercentTaxForNY" finished-at="2016-07-31T09:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[NY]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[$186.00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$11.16]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$197.16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- specialTaxRateForNYTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="teardown" is-config="true" duration-ms="31" started-at="2016-07-31T09:56:36Z" finished-at="2016-07-31T09:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="beforeTest" is-config="true" duration-ms="16406" started-at="2016-07-31T09:56:36Z" finished-at="2016-07-31T09:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="zeroTaxRateStateTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="zeroTaxRateStateTest" duration-ms="15588" started-at="2016-07-31T09:56:53Z" data-provider="zeroTaxRate" finished-at="2016-07-31T09:57:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MN]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[$137.00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$0.00]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$137.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zeroTaxRateStateTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="teardown" is-config="true" duration-ms="43" started-at="2016-07-31T09:57:08Z" finished-at="2016-07-31T09:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="allZeroQuantityTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="allZeroQuantityTest" duration-ms="0" started-at="2016-07-31T09:57:08Z" data-provider="allZeroQty" finished-at="2016-07-31T09:57:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.allZeroSocksQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.allZeroSocksQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:156)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allZeroQuantityTest -->
+        <test-method status="SKIP" signature="invalidStockQuantityTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="invalidStockQuantityTest" duration-ms="0" started-at="2016-07-31T09:57:08Z" data-provider="invalidStockQty" finished-at="2016-07-31T09:57:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.invalidStockQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.invalidStockQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:156)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidStockQuantityTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="beforeTest" is-config="true" duration-ms="28904" started-at="2016-07-31T09:57:08Z" finished-at="2016-07-31T09:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="maxStockCheckoutTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="maxStockCheckoutTest" duration-ms="15644" started-at="2016-07-31T09:57:37Z" data-provider="maxStockFivePercentTax" finished-at="2016-07-31T09:57:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[$899.00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$44.95]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$943.95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxStockCheckoutTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="teardown" is-config="true" duration-ms="30" started-at="2016-07-31T09:57:53Z" finished-at="2016-07-31T09:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="beforeTest" is-config="true" duration-ms="24527" started-at="2016-07-31T09:57:53Z" finished-at="2016-07-31T09:58:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="negativeQuantityTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="negativeQuantityTest" duration-ms="14565" started-at="2016-07-31T09:58:18Z" data-provider="negativeSocksQty" finished-at="2016-07-31T09:58:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AK]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[$239.00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$11.95]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$250.95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeQuantityTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="teardown" is-config="true" duration-ms="44" started-at="2016-07-31T09:58:32Z" finished-at="2016-07-31T09:58:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="outOfStockQuantityTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest@18067a5]" name="outOfStockQuantityTest" duration-ms="0" started-at="2016-07-31T09:58:32Z" data-provider="outOfStockQty" finished-at="2016-07-31T09:58:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.outOfStockQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[] com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest.outOfStockQty() must return either Object[][] or Iterator<Object>[], not class [Ljava.lang.Object;
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:156)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outOfStockQuantityTest -->
+      </class> <!-- com.earnest.homework.selenium.tests.stateTaxCalculator.StateTaxCalculationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
