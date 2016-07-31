@@ -32,6 +32,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.earnest.homework.selenium.pages.catalog.CatalogPage;
 import com.earnest.homework.selenium.pages.checkout.CheckoutPage;
+import com.earnest.homework.selenium.utils.TestUtils;
 
 
 
@@ -101,21 +102,21 @@ public class StateTaxCalculationTest {
 	}
 	
 	@DataProvider( name = "allZeroQty" ) 
-	public Object[] allZeroSocksQty(){
+	public Object[][] allZeroQty(){
 		return new Object[][]{
 			{"0", "0", "0", "0", "FL", "$0.00", "$0.00", "$0.00"}
 		};		
 	}
 	
 	@DataProvider( name = "outOfStockQty" ) 
-	public Object[] outOfStockQty(){
+	public Object[][] outOfStockQty(){
 		return new Object[][]{
 			{"2", "3", "5", "1", "CO", "$278.00", "$13.90", "$291.90"}
 		};		
 	}
 	
 	@DataProvider( name = "invalidStockQty" ) 
-	public Object[] invalidStockQty(){
+	public Object[][] invalidStockQty(){
 		return new Object[][]{
 			{"A", "3", "$", "1", "CO", "$77.00", "$3.85", "$80.85"}
 		};		
@@ -134,8 +135,8 @@ public class StateTaxCalculationTest {
 		}
 	
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get(baseUrl);
-		Thread.sleep(3000);
+		driver.get(baseUrl);		
+		TestUtils.waitForPageLoad(driver);
 		catalogPage = PageFactory.initElements(driver, CatalogPage.class);
 		
     }
@@ -151,7 +152,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -168,7 +169,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
       	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
@@ -183,7 +184,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -199,7 +200,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -215,7 +216,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -231,7 +232,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -247,7 +248,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
@@ -263,7 +264,7 @@ public class StateTaxCalculationTest {
     	//Providing input in catalog page
     	catalogPage.orderItems(driver, zebraQty, lionQty, elephantQty, graffeQty, delivState);
     	
-    	Thread.sleep(3000);
+    	TestUtils.waitForPageLoad(driver);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
