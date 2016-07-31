@@ -9,21 +9,21 @@
 
 package com.earnest.homework.selenium.utils;
 
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class TestUtils {
-
+ 
     public static void write(WebElement we, String s) {
         we.clear();
         // Do not send null as this will fail for Chrome. From my experience :)
         we.sendKeys(s == null ? "": s);
     }
-    
-
-	
+    	
     public static String getText(WebDriver driver, WebElement value) {
         
         String res = "";
@@ -50,5 +50,17 @@ public class TestUtils {
 		}
 		
 	}
- 
+    
+    public static void waitForPageLoad(WebDriver driver) {
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        wait.until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver wdriver) {
+                return ((JavascriptExecutor) driver).executeScript(
+                    "return document.readyState"
+                ).equals("complete");
+            }
+        });
+    } 
 }
