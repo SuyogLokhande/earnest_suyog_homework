@@ -117,7 +117,7 @@ public class StateTaxCalculationTest {
 	@DataProvider( name = "invalidStockQty" ) 
 	public Object[] invalidStockQty(){
 		return new Object[][]{
-			{"A", "3", "$", "1", "CO", "$278.00", "$13.90", "$291.90"}
+			{"A", "3", "$", "1", "CO", "$77.00", "$3.85", "$80.85"}
 		};		
 	}
 	
@@ -128,7 +128,7 @@ public class StateTaxCalculationTest {
 		this.driver = new FirefoxDriver();
 		//driver = new ChromeDriver();
 		baseUrl = "https://jungle-socks.herokuapp.com/";
-		//baseUrl = "http://expresse-online.assia-inc.com/demoGui31/";
+		
 		if(logger.isDebugEnabled()){
 			logger.debug("Current URL: " +baseUrl);
 		}
@@ -155,7 +155,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	//System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -170,10 +170,9 @@ public class StateTaxCalculationTest {
     	
     	Thread.sleep(3000);
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
-    	
-      	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	//System.out.println(Arrays.toString(confirmFromGUI.toArray()));
-		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
+    	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
+      	Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
     }
@@ -188,7 +187,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -204,7 +203,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -220,7 +219,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -236,7 +235,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -252,7 +251,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
@@ -268,7 +267,7 @@ public class StateTaxCalculationTest {
     	checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
     	
       	ArrayList<String> confirmFromGUI = checkoutPage.confirmOrder(driver);
-    	System.out.println(Arrays.toString(confirmFromGUI.toArray()));
+      	logger.info("Confirm page summary: " +(Arrays.toString(confirmFromGUI.toArray())));
 		Assert.assertEquals(confirmFromGUI.get(0), subTotal);
 		Assert.assertEquals(confirmFromGUI.get(1), tax);
 		Assert.assertEquals(confirmFromGUI.get(2), total);
