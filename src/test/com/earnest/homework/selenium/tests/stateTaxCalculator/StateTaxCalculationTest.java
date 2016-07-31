@@ -273,5 +273,4 @@ public class StateTaxCalculationTest {
 		Assert.assertEquals(confirmFromGUI.get(2), total);
     }
     
-
 }
