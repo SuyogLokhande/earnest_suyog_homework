@@ -26,6 +26,7 @@ import org.apache.log4j.Logger;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -126,8 +127,12 @@ public class StateTaxCalculationTest {
     @BeforeMethod
 	public void beforeTest() throws InterruptedException {
     	
-		this.driver = new FirefoxDriver();
-		//driver = new ChromeDriver();
+    	//For firefox driver
+    	//System.setProperty("webdriver.gecko.driver", "/Users/suyoglokhande/eclipse/imp_jars/geckodriver");
+    	//this.driver = new FirefoxDriver();
+    	//For Chrome driver
+    	System.setProperty("webdriver.chrome.driver", "/Users/suyoglokhande/eclipse/imp_jars/chromedriver");
+    	this.driver = new ChromeDriver();
 		baseUrl = "https://jungle-socks.herokuapp.com/";
 		
 		if(logger.isDebugEnabled()){
@@ -143,7 +148,7 @@ public class StateTaxCalculationTest {
     
     @AfterMethod
     public void teardown(){
-    	this.driver.close();
+    	this.driver.quit();
     }
     
     @Test(priority=1, dataProvider="positiveSocksQtyForSpecialCA")
